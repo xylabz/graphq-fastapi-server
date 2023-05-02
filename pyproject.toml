@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "graphql-server-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Hamza Alam <getright_02@live.com>"]
+readme = "README.md"
+packages = [{include = "graphql_server_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.68.1"
+uvicorn = "^0.15.0"
+graphene = "^3.0.0b6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "main:main"
