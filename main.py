@@ -19,4 +19,4 @@ async def graphql(query: str):
 
 @app.get('/health')
 async def health():
-    return {'status': 'ok'}
+    return {'status': 'okay'}
