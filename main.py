@@ -17,6 +17,6 @@ async def graphql(query: str):
     result = schema.execute(query)
     return {'data': result.data}
 
-@app.get('/health')
-async def health():
-    return {'status': 'okay'}
+@app.get('/status')
+async def status():
+    return {'status': 'Ok'}
